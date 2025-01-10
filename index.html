@@ -1,122 +1,133 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>شركة تصميم وبرمجة</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Taka._.Tech | حلول تقنية مبتكرة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- الشريط الجانبي -->
-    <div class="sidebar">
-        <h2>خدماتنا</h2>
-        <ul>
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#services">خدماتنا</a></li>
-            <li><a href="#about">من نحن</a></li>
-            <li><a href="#contact">اتصل بنا</a></li>
-        </ul>
-    </div>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-laptop-code"></i> Taka._.Tech</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">الخدمات</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#portfolio">أعمالنا</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                    <li><button id="dark-mode-toggle" title="تبديل الوضع الداكن">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- المحتوى الرئيسي -->
-    <div class="content">
-        <!-- الصفحة الرئيسية -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>حلول مبتكرة في التصميم والتطوير</h1>
-                <p>نقدم خدمات متميزة في تصميم السوشيال ميديا، التسويق الرقمي، وبرمجة المواقع والتطبيقات.</p>
-                <a href="#services" class="btn">اكتشف خدماتنا</a>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container" data-aos="fade-up">
+            <h2>نقدم أفضل الحلول التقنية</h2>
+            <p>تصميم سوشيال ميديا | تطوير تطبيقات | برمجة ويب والمزيد...</p>
+            <a href="#services" class="btn">تعرف على خدماتنا</a>
+        </div>
+    </section>
 
-        <!-- خدماتنا -->
-        <section id="services">
-            <h2>خدماتنا</h2>
-            <div class="service-cards">
-                <div class="service-card">
-                    <img src="yy/cv/images/serf.jpg" alt="تصميم سوشيال ميديا">
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 data-aos="fade-right">خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service" data-aos="zoom-in">
+                    <i class="fas fa-paint-brush"></i>
                     <h3>تصميم سوشيال ميديا</h3>
-                    <p>تصميم حملات سوشيال ميديا مبتكرة وجذابة.</p>
+                    <p>إبداع في تصميم المحتوى المرئي لجذب جمهورك.</p>
                 </div>
-                <div class="service-card">
-                    <img src="icons/marketing.jpg" alt="تسويق">
+                <div class="service" data-aos="zoom-in">
+                    <i class="fas fa-bullhorn"></i>
                     <h3>تسويق</h3>
-                    <p>استراتيجيات تسويقية متكاملة لزيادة الوعي بالعلامة التجارية.</p>
+                    <p>استراتيجيات تسويقية مبتكرة لتحقيق أهدافك.</p>
                 </div>
-                <div class="service-card">
-                    <img src="icons/content-writing.jpg" alt="كتابة محتوى">
+                <div class="service" data-aos="zoom-in">
+                    <i class="fas fa-pen"></i>
                     <h3>كتابة محتوى</h3>
-                    <p>كتابة محتوى مميز وجذاب لجمهورك.</p>
+                    <p>محتوى أصلي وجذاب يعبر عن هويتك.</p>
                 </div>
-                <div class="service-card">
-                    <img src="icons/app-development.jpg" alt="تطوير تطبيقات">
+                <div class="service" data-aos="zoom-in">
+                    <i class="fas fa-mobile-alt"></i>
                     <h3>تطوير تطبيقات</h3>
-                    <p>تطوير تطبيقات موبايل عبر منصات iOS و Android.</p>
+                    <p>تطبيقات عصرية تعمل بسلاسة على جميع الأجهزة.</p>
                 </div>
-                <div class="service-card">
-                    <img src="icons/web-development.jpg" alt="برمجة ويب">
+                <div class="service" data-aos="zoom-in">
+                    <i class="fas fa-code"></i>
                     <h3>برمجة ويب</h3>
-                    <p>إنشاء مواقع إلكترونية حديثة باستخدام تقنيات متطورة.</p>
+                    <p>مواقع ويب متكاملة وذات تصميم احترافي.</p>
                 </div>
-                <div class="service-card">
-                    <img src="icons/video-editing.jpg" alt="مونتاج">
+                <div class="service" data-aos="zoom-in">
+                    <i class="fas fa-film"></i>
                     <h3>مونتاج</h3>
-                    <p>تحرير وتصميم فيديوهات إبداعية.</p>
-                </div>
-                <div class="service-card">
-                    <img src="icons/hosting.jpg" alt="استضافة ودومينات">
-                    <h3>استضافة ودومينات</h3>
-                    <p>توفير استضافات ودومينات موثوقة وسريعة.</p>
-                </div>
-                <div class="service-card">
-                    <img src="icons/followers.jpg" alt="زيادة المتابعين">
-                    <h3>زيادة المتابعين</h3>
-                    <p>استراتيجيات لزيادة عدد المتابعين على منصات التواصل الاجتماعي.</p>
-                </div>
-                <div class="service-card">
-                    <img src="icons/news-site.jpg" alt="إنشاء موقع إخباري">
-                    <h3>إنشاء موقع إخباري</h3>
-                    <p>إنشاء مواقع إخبارية تفاعلية وجذابة.</p>
-                </div>
-                <div class="service-card">
-                    <img src="icons/blog-building.jpg" alt="إنشاء مدونة">
-                    <h3>إنشاء مدونة</h3>
-                    <p>إنشاء مدونات شخصية أو تجارية.</p>
-                </div>
-                <div class="service-card">
-                    <img src="icons/ecommerce.jpg" alt="إنشاء متجر إلكتروني">
-                    <h3>إنشاء متجر إلكتروني</h3>
-                    <p>تطوير متاجر إلكترونية احترافية وسهلة الاستخدام.</p>
+                    <p>تحرير فيديوهات احترافية تناسب جميع احتياجاتك.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- من نحن -->
-        <section id="about">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-left">
             <h2>من نحن</h2>
-            <p>نحن شركة متخصصة في توفير حلول تصميم وتطوير المواقع الإلكترونية، وتحقيق النجاح الرقمي لعملائنا.</p>
-        </section>
+            <p>شركة Taka._.Tech هي شركة تقنية متخصصة في تقديم حلول رقمية مبتكرة تهدف إلى تعزيز وجود الشركات والأفراد في العالم الرقمي.</p>
+        </div>
+    </section>
 
-        <!-- اتصل بنا -->
-        <section id="contact">
-            <h2>اتصل بنا</h2>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 data-aos="fade-right">أعمالنا</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="flip-left">
+                    <i class="fas fa-globe"></i>
+                    <p>مشروع ويب</p>
+                </div>
+                <div class="portfolio-item" data-aos="flip-left">
+                    <i class="fas fa-store"></i>
+                    <p>متجر إلكتروني</p>
+                </div>
+                <div class="portfolio-item" data-aos="flip-left">
+                    <i class="fas fa-blog"></i>
+                    <p>مدونة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-aos="fade-up">تواصل معنا</h2>
             <form>
-                <label for="name">الاسم:</label>
+                <label for="name">الاسم</label>
                 <input type="text" id="name" name="name" required>
-                <label for="email">البريد الإلكتروني:</label>
+                
+                <label for="email">البريد الإلكتروني</label>
                 <input type="email" id="email" name="email" required>
-                <label for="message">الرسالة:</label>
-                <textarea id="message" name="message" required></textarea>
+                
+                <label for="message">رسالتك</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
                 <button type="submit">إرسال</button>
             </form>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <!-- العلامة المائية المتحركة -->
-    <div class="watermark">شركة تصميم وبرمجة</div>
-
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>جميع الحقوق محفوظة &copy; 2025 Taka._.Tech</p>
+        </div>
+    </footer>
 </body>
 </html>
